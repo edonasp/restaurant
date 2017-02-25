@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">               
+        <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/>
+        <link rel="stylesheet" href="css/nivo-lightbox.css" type="text/css" />
+        <link rel="stylesheet" href="css/default.css" type="text/css" />
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        
+    </head>
+    <body>
+        <!--=========================Navigatioin=========================-->
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <!--======Butoni ne Rinsponziv====-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"data-toggle="collapse"data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> 
+
+                    <a class="navbar-brand" href="index.html"><img src="img/logo1.png" class="img-responsive"></a>                               
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="index.html">MENU</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li  class="active"><a href="kontakti.html">CONTACT</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+<!--==============================Contact-bg===================================-->
+    <div class="contact_bg">
+        <div class="opacity_bg"></div>
+        <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h1>CONTACT AS</h1>
+            </div>
+        </div>
+    </div>
+    <!--===========================Kontakti==================================-->
+    <div class="contact">
+        <div class="container">
+            <h1 data-scroll-reveal="enter from the left after 0.1s">CONTACT</h1>
+            <div class="col-md-12 marg_left">
+                <div class="col-md-6">
+                    <input placeholder="NAME:"type="text"><br>
+                    <input placeholder="SURNAME:"type="text"><br>
+                    <input placeholder="PHONE NO:"type="text"><br>
+                    <input placeholder="E-MAIL:"type="text">
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="SUBJECT:"type="text"><br>
+                    <textarea placeholder="MESSAGE:"type="text"></textarea><br>
+                    <input class="button" type="submit"name="submit"value="SUBMIT">
+                </div>
+            </div>
+            <div class="col-md-12 harta" id="map">
+            </div>
+
+            <div class="col-md-3 info_right">
+            <h1>RESTAURANT</h1>
+            <p>ADDRESS:<br>
+            Magjistralja Ferizaj-Prishtinë<br>
+            70000 Ferizaj<br>
+            Kosovë<br>
+            <br>
+            INFO:<br>
+            Tel: +37744121741<br>
+            Tel: +37744201862<br>
+            E-mail: info@restaurant.com<br>
+            www.restaurant.com</p>
+
+        </div>
+    </div>
+    <!--============================Footer================================-->
+    <footer data-scroll-reveal="enter from the bottom after 0.1s">
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <h3>All Rights Are Reserved</h3>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <h3>Design By Edona</h3>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="#"><img src="img/top-fb.png"></a>
+                <a href="#"><img src="img/top-google.png"></a>
+                <a href="#"><img src="img/top-twitter.png"></a>
+            </div>
+        </div>
+    </div>
+
+       <!--===========================Sckript===============================-->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+        <script src="js/nivo-lightbox.min.js"></script>
+        <script type="text/javascript" src="js/scrollReveal.min.js"></script>
+
+        <script>
+            window.scrollReveal = new scrollReveal({reset: true});
+        </script> 
+
+        <script type="text/javascript">
+          $( document ).ready(function( $ ) {
+            $( '#example1' ).sliderPro({
+              width: 1400,
+              height: 600,
+              arrows: true,
+              buttons: false,
+              waitForLayers: true,
+              thumbnailWidth: false,
+              thumbnailHeight: false,
+              thumbnailPointer: false,
+              autoplay: true,
+              touchSwipe: false,
+              autoScaleLayers: false,
+              breakpoints: {
+                500: {
+                  thumbnailWidth: 120,
+                  thumbnailHeight: 50
+                }
+
+              }
+            });
+          });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('a').nivoLightbox();
+            });
+            $('a').nivoLightbox({
+                effect: 'fade',                 
+                theme: 'default',                           
+                keyboardNav: true,                             
+                clickOverlayToClose: true,                    
+                onInit: function(){},                         
+                beforeShowLightbox: function(){},             
+                afterShowLightbox: function(lightbox){},     
+                beforeHideLightbox: function(){},             
+                afterHideLightbox: function(){},             
+                onPrev: function(element){},                 
+                onNext: function(element){},
+                errorMessage: 'The requested content cannot be loaded. Please try again later.' 
+            });
+        </script>
+        <script>
+            // For Demo purposes only (show hover effect on mobile devices)
+            [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+                el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+            } );
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                // When the window has finished loading create our google map below
+                google.maps.event.addDomListener(window, 'load', init);
+                function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    draggable: false,
+                // How zoomed in you want the map to start at (always required)
+                zoom: 10,
+                scrollwheel: false,
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(42.3722652, 21.1561069), // New York
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [
+                {
+                    "stylers": [
+                        {
+                            "saturation": 100
+                        },
+                        {
+                            "gamma": 0.6
+                        }
+                    ]
+                }
+            ]
+            };
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                        var mapElement = document.getElementById('map');
+                        // Create the Google Map using our element and options defined above
+                        var map = new google.maps.Map(mapElement, mapOptions);
+                        // Let's also add a marker while we're at it
+                        var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(42.3722652, 21.1561069),
+                        map: map,
+                            icon: 'img/pinmap.png'
+                        });
+                        }
+                        </script>
+     
+    </body>
+</html>
